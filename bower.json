@@ -1,0 +1,24 @@
+{
+  "name": "mycengage",
+  "version": "0.0.0",
+  "authors": [
+    "Jay Fallon <jayfallon@gmail.com>"
+  ],
+  "description": "Purchase Options page for MyCengage",
+  "main": "purchase-options.html",
+  "moduleType": [],
+  "keywords": [
+    "mycengage",
+    "purchase",
+    "options"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

@@ -1,0 +1,90 @@
+.view-nav {
+	background-color: $primary04;
+	border-bottom: 1px solid $secondary06;
+
+	.logo-wrapper {
+		padding: 0;
+		display: flex;
+		justify-content: flex-start;
+		align-items: center;
+		h1 {
+			width: 170px;
+			height: 50px;
+			position: relative;
+			a {
+				background: url(../img/cengage-logo.svg) no-repeat;
+				width: 150px;
+				height: 50px;
+				position: absolute;
+				span{
+					display: none;
+				}
+			}
+		}
+	}
+
+	.menu-wrapper {
+		padding: 20px 0;
+		font-size: 14px;
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-end;
+		align-items: flex-end;
+		a:hover {
+			text-decoration: none;
+		}
+		.btn-group {
+			.btn {
+				margin-right: 0px;
+				padding-right: 0px;
+			}
+		}
+	}
+
+	/* overriding Bootstrap styles for default button group*/
+	.btn-group > .btn-default {
+		border-color: #fff;
+		color:  #007db8;
+		&:hover {
+			background-color: $primary04;
+		}
+		&:active {
+			box-shadow: none;
+		}
+		span {
+			padding-left: 8px;
+			color: $secondary04;
+		}
+	}
+}
+
+@media screen and (width>=992px) {
+	.view-nav {
+
+		.logo-wrapper {
+			padding: 0 55px 0 0;
+			height: 115px;
+		}
+
+		.menu-wrapper {
+			padding: 0 55px 0 40px;
+			height: 115px;
+			font-size: 14px;
+			display: flex;
+			flex-direction: row;
+			justify-content: flex-end;
+			align-items: center;
+			a:hover {
+				text-decoration: none;
+			}
+			.btn-group {
+				margin-left: 42px;
+				&:last-child {
+					margin-left: 32px
+				}
+			}
+		}
+
+	}
+}
+

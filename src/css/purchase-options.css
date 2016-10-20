@@ -1,0 +1,17 @@
+html, body {
+	background-color: #3f3f3f;
+	margin: 0;
+	padding: 0;
+	color: $primary01;
+}
+
+.no-padding-right {
+		padding-right: 0;
+	}
+	
+@import 'layout/view-navbar.css';
+@import 'layout/view-header.css';
+@import 'layout/intra-navbar.css';
+@import 'layout/active-footer.css';
+@import 'layout/passive-footer.css';
+@import 'content/content.css';

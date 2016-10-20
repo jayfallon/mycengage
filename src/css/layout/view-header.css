@@ -1,0 +1,110 @@
+.view-header {
+	background-color: $accent02;
+	border-bottom: 1px solid $secondary06;
+
+	/* Added background-color to Bootstrap columns to avoid body color bleeding through at smaller screen sizes*/
+	.course-callout-wrapper {
+		background-color: $accent02;
+		padding: 20px 15px;
+		color: $primary04;
+		font: normal 36px "Gnuolane", Helvetica, sans-serif;
+		text-transform: uppercase;
+		display: flex;
+		align-items: center;
+		span {
+			margin-right: 24px;
+			color: #6f9823;
+		}
+	}
+	.course-description-wrapper {
+		background-color: $primary04;
+	}
+
+	.course-description {
+		background-color: $primary04;
+		min-height: 185px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+
+		h3.course-title {
+			margin: 0;
+			padding: 0 0 12px 0;
+			color: $primary01;
+			font-size: 29px;
+			text-transform: uppercase;
+			.title-number {
+				color: $accent02;
+			}
+			.title-section {
+				color: $secondary05;
+				font-style: italic;
+			}
+		}
+
+		.course-info {
+			ul {
+				margin: 0;
+				padding: 0 0 8px;
+				li {
+					color: $secondary03;
+					font-size: 14px;
+					font-weight: bold;
+					list-style: none;
+					&:last-child {
+						border-right: 0;
+					}
+				}
+			}
+		}
+
+		.course-instructor {
+			color: $secondary03;
+			font-size: 14px;
+			font-weight: bold;
+			line-height: 14px;
+			i {
+				font-weight: normal;
+			}
+		}
+	}
+
+}
+
+@media screen and (width >= 992px) {
+	.view-header {
+		background: linear-gradient(to right,  $accent02 0%,$accent02 30%,$primary04 30%,$primary04 100%);
+
+		.row {
+			display: flex;
+		}
+
+		.course-callout-wrapper {
+			background: url('../img/header-callout-shape.png') no-repeat center right, linear-gradient(to right,  $accent02 0%,$accent02 calc(100% - 13px),$primary04 calc(100% - 13px),$primary04 100%);
+			display: flex;
+			align-items: center;
+		}
+
+		.course-description {
+			padding-left: 25px;
+
+			.course-info {
+				ul {
+					margin: 0;
+					padding: 0 0 8px;
+					display: flex;
+					li {
+						margin-right: 8px;
+						padding-right: 8px;
+						border-right: 1.5px solid $secondary03;
+						color: $secondary03;
+						line-height: 14px;
+						&:last-child {
+							border-right: 0;
+						}
+					}
+				}
+			}
+		}
+	}
+}

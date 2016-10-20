@@ -1,0 +1,224 @@
+.view-content {
+	background-color: $primary04;
+
+	.purchase-details {
+		background-color: $primary03;
+		padding: 40px 0;
+		.purchase-description {
+			padding: 20px 0;
+			.purchase-type {
+				margin-bottom: 8px;
+				color: $secondary05;
+				font-size: 12px;
+				font-weight: bold;
+				text-transform: uppercase;
+				span {
+					margin-right: 8px;
+					color: $secondary04;
+					font-weight: bold;
+				}
+			}
+			.purchase-title {
+				color: $accent02;
+				font-size: 18px;
+			}
+			.purchase-access {
+				font-size: 14px;
+				font-style: italic;
+			}
+		}
+		.details-button {
+			text-align: right;
+		}
+	}
+
+	.design-in-progress {
+		padding: 80px 0;
+		color: $limited01;
+		font-size: 22px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.hide-details {
+		background-color: $accent02;
+		padding: 18px 0;
+		color: $accent01;
+		font-weight: bold;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		span.icon-angle-up {
+			font-size: 20px;
+		}
+		span.text {
+			color: $primary04;
+		}
+	}
+
+	.purchase-invoice {
+		padding: 20px 0;
+		.checkbox {
+			margin-left: 24px;
+		}
+
+		.multiple-term-msg {
+			padding: 30px 0;
+			border-bottom: 2px solid $secondary05;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			h4 {
+				margin: 0;
+				padding: 0;
+				color: $primary01;
+				text-align: center;
+			}
+		}
+
+		.invoice-wrapper {
+			border-bottom: 2px solid $secondary05;
+			padding: 20px 0 0;
+			.checkbox {
+				margin-top: 0;
+			}
+			.radio {
+				margin-top: 0;
+				.invoice-description {
+					font-size: 18px;
+					span {
+						color: $secondary04;
+						font-size: 15px;
+						font-style: normal;
+					}
+				}
+			}
+			.seperate-wrapper {
+				padding-top: 30px;
+				border-top: 2px solid $secondary05;
+				.invoice-description {
+					color: $accent02;
+					span {
+						font-style: italic;
+					}
+				}
+				span {
+					margin-left: 24px;
+					color: $accent02;
+				}
+				span.from {
+					color: $secondary05;
+					font-style: italic;
+				}
+			}
+
+			.subproduct-wrapper {
+				padding: 26px 12px 0px 24px;
+				border-top: 1px solid $secondary05;
+				&.odd {
+					background-color: $primary03;
+				}
+			}
+
+			.purchase-book-seperately {
+				.book-section {
+					padding: 20px 0;
+					border-top: 2px solid $secondary05;
+					font-weight: bold;
+					span {
+						color: $accent02;
+					}
+					span.free-access {
+						color: $secondary04;
+						font-weight: normal;
+						font-style: italic;
+					}
+				}
+			}
+
+			.echapters-wrapper {
+				height: 300px;
+				overflow-y: scroll;
+				overflow-x: hidden;
+				.checkbox {
+					margin-left: 0px;
+				}
+			}
+
+		}
+
+		.invoice-description {
+			margin-left: 12px;
+			padding-bottom: 16px;
+			span {
+				font-size: 14px;
+				font-style: italic;
+			}
+		}
+		.invoice-price {
+			font-weight: bold;
+			text-align: right;
+			&.action {
+				color: $accent02;
+				font-weight: normal;
+				span {
+					margin-left: 24px;
+				}
+			}
+			&.free {
+				color: $accent06;
+				text-transform: uppercase;
+			}
+		}
+		.purchase-total {
+			.purchase-subtotal {
+				background-color: $primary03;
+				padding: 0 28px;
+				height: 140px;
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: flex-start;
+				.title {
+					color: $secondary05;
+					text-transform: uppercase;
+				}
+				.amount {
+					font-weight: bold;
+				}
+			}
+		}
+		.purchase-add-cart {
+			margin-top: 24px;
+			text-align: right;
+			.btn {
+				color: $primary04;
+				width: 165px;
+			}
+		}
+	}
+}
+
+@media screen and (width >= 992px) {
+	.view-content {
+		.purchase-details {
+			.purchase-description {
+				padding: 0 0;
+			}
+		}
+		.purchase-invoice {
+			.invoice-description {
+				margin-left: 45px;
+			}
+
+			.purchase-total {
+				margin-top: 0;
+				.purchase-subtotal {
+					align-items: flex-start;
+				}
+			}
+		}
+	}
+}

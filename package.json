@@ -4,7 +4,7 @@
   "description": "Purchase Options page",
   "main": "gulp.js",
   "dependencies": {
-    "gulp": "^3.9.0",
+    "gulp": "^4.0.0",
     "gulp-changed": "^1.3.0",
     "browser-sync": "^2.10.0",
     "gulp-postcss": "^6.0.1",
